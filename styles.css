@@ -23,12 +23,12 @@ ul {
     display: none;
 }
 
-@media screen (max-width: 410px) {
-    .desktop {
+@media only screen and (max-width: 820px) {
+    nav .desktop {
         display: none;
     }
 
-    .mobile {
+    nav .mobile {
         display: block;
     }
 }
@@ -80,11 +80,19 @@ strong {
     text-decoration-line: underline;
 }
 
+@media screen and (max-width: 800px) {
+    ol li {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+}
+
 /* quotes styling */
 
 img {
+    align-self: center;
     max-width: 100%;
-    max-height: 900px;
+    max-height: 600px;
     margin: 1%;
 }
 
@@ -103,6 +111,7 @@ img {
 #special {
     font-family: 'Special Elite';
     font-size: 2.5rem;
+    line-height: 3.5rem;
 }
 
 #hit {
@@ -115,4 +124,20 @@ img {
     font-family: 'Libre Barcode 39 Text';
     font-size: 8rem;
     margin-top: 0;
+}
+
+@media screen and (max-width: 800px) {
+    #special {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        padding: 2rem;
+    }
+
+    #hit {
+        font-size: 3rem;
+    }
+    
+    #own {
+        font-size: 4rem;
+    }
 }
