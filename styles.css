@@ -141,3 +141,9 @@ img {
         font-size: 4rem;
     }
 }
+
+/* credits styling */
+
+section.credits {
+    font-family: 'Rock Salt';
+}
