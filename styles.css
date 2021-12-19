@@ -1,3 +1,10 @@
+/* general styling */
+
+html {
+    background-color: rgb(13, 146, 146);
+    font-size: 18px;
+}
+
 /* header styling */
 
 ul,
@@ -8,6 +15,7 @@ ul,
 
 ul {
     list-style-type: none;
+    font-family: 'Special Elite';
 }
 
 .mobile {
@@ -28,23 +36,44 @@ ul {
 
 section.banner {
     background-image: url('images/quinn-buffing-2UhwQ2PnIBQ-unsplash.jpg');
+    
+    background-position: bottom;
     max-width: 100%;
     text-align: center;
+    padding: 4rem;
 }
 
 h1 {
     font-family: 'Permanent Marker';
-    color: pink;
+    font-size: 6rem;
+    font-weight: normal;    
+    color: rgb(250, 142, 160);
+    margin-bottom: 0;
 }
 
 .banner h2 {
     font-family: 'Rock Salt';
-    color: pink;
+    font-size: 2rem;
+    color: maroon;
 }
 
 /* rules styling */
 
-#rules {
-    font-family: 'Special Elite';
+h2 {
+    font-size: 3rem;
 }
 
+#rules {
+    font-family: 'Special Elite';
+    padding: 0 10%;
+    color: white;
+}
+
+ol li {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+strong {
+    font-weight: 900;
+}
