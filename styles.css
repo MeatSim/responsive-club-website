@@ -1,0 +1,40 @@
+/* header styling */
+
+ul,
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen (max-width: 410px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+/* banner styling */
+
+h1 {
+    font-family: 'Permanent Marker';
+}
+
+.banner h2 {
+    font-family: 'Rock Salt';
+}
+
+#rules {
+    font-family: 'Special Elite';
+}
+
