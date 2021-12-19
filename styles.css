@@ -11,6 +11,7 @@ ul,
 .container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -70,10 +71,48 @@ h2 {
 }
 
 ol li {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
 }
 
 strong {
     font-weight: 900;
+    text-decoration-line: underline;
+}
+
+/* quotes styling */
+
+img {
+    max-width: 100%;
+    max-height: 900px;
+    margin: 1%;
+}
+
+#quotes {
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: left;
+    background-color: antiquewhite;
+}
+
+#never {
+    font-family: 'Road Rage';
+    font-size: 4rem;
+}
+
+#special {
+    font-family: 'Special Elite';
+    font-size: 2.5rem;
+}
+
+#hit {
+    font-family: 'Smooch';
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+#own {
+    font-family: 'Libre Barcode 39 Text';
+    font-size: 8rem;
+    margin-top: 0;
 }
