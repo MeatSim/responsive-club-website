@@ -26,13 +26,23 @@ ul {
 
 /* banner styling */
 
+section.banner {
+    background-image: url('images/quinn-buffing-2UhwQ2PnIBQ-unsplash.jpg');
+    max-width: 100%;
+    text-align: center;
+}
+
 h1 {
     font-family: 'Permanent Marker';
+    color: pink;
 }
 
 .banner h2 {
     font-family: 'Rock Salt';
+    color: pink;
 }
+
+/* rules styling */
 
 #rules {
     font-family: 'Special Elite';
