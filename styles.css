@@ -10,25 +10,26 @@ html {
 ul,
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 ul {
     list-style-type: none;
     font-family: 'Special Elite';
+    padding-left: 0;
 }
 
-.mobile {
+ .mobile {
     display: none;
 }
 
-@media only screen and (max-width: 820px) {
-    nav .desktop {
+@media only screen and (max-width: 550px) {
+    nav.desktop {
         display: none;
     }
 
-    nav .mobile {
+    nav.mobile {
         display: block;
     }
 }
@@ -37,7 +38,7 @@ ul {
 
 section.banner {
     background-image: url('images/quinn-buffing-2UhwQ2PnIBQ-unsplash.jpg');
-    
+    background-repeat: no-repeat;
     background-position: bottom;
     max-width: 100%;
     text-align: center;
@@ -56,6 +57,27 @@ h1 {
     font-family: 'Rock Salt';
     font-size: 2rem;
     color: maroon;
+}
+
+@media screen and (max-width: 450px) {
+    section.banner {
+        padding: 0.5rem 1rem;
+        background-size: 200%;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-top: 0;
+    }
+
+    h2.desktop {
+        display: none;
+    }
+
+    h2.mobile {
+        display: block;
+        font-size: 1.5rem;
+    }
 }
 
 /* rules styling */
@@ -89,11 +111,22 @@ strong {
 
 /* quotes styling */
 
+.landscape {
+    max-width: 100%;
+    max-height: 360px;
+    overflow: hidden;
+    margin: 2%;
+}
+
+.portrait {
+    overflow: hidden;
+    margin: 2%;
+}
+
 img {
     align-self: center;
     max-width: 100%;
     max-height: 600px;
-    margin: 1%;
 }
 
 #quotes {
@@ -124,6 +157,13 @@ img {
     font-family: 'Libre Barcode 39 Text';
     font-size: 8rem;
     margin-top: 0;
+}
+
+@media screen and (max-width: 640px) {
+    html, .landscape, .portrait {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 800px) {
