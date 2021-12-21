@@ -196,6 +196,22 @@ img {
     }
 }
 
+@media screen and (max-width: 500px) {
+    #never {
+        font-size: 2.5rem;
+        padding-left: 1rem;
+    }
+
+    #hit {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+    
+    #own {
+        font-size: 3rem;
+    }
+}
+
 /* credits styling */
 
 section.credits {
