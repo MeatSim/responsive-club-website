@@ -31,6 +31,10 @@ ul {
 
     nav.mobile {
         display: block;
+        position: fixed;
+        background-color:rgb(13, 146, 146);
+        width: 100%;
+        top: 0;
     }
 }
 
@@ -61,7 +65,7 @@ h1 {
 
 @media screen and (max-width: 450px) {
     section.banner {
-        padding: 0.5rem 1rem;
+        padding: 4rem 1rem;
         background-size: 200%;
     }
 
@@ -109,6 +113,16 @@ strong {
     }
 }
 
+@media screen and (max-width: 360px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    ol li {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+}
 /* quotes styling */
 
 .landscape {
